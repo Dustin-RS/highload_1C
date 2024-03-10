@@ -1,0 +1,7 @@
+#!/bin/bash
+
+NUMBER_OF_REQUESTS=$1
+NUMBER_OF_THREADS=$2
+PORT=$3
+
+time ab -n ${NUMBER_OF_REQUESTS} -c ${NUMBER_OF_THREADS} http://127.0.0.1:${PORT}/endpoint1
